@@ -13,6 +13,12 @@ import java.util.Scanner;
  */
 
 public class Calculator {
+    /**
+     * Запрашивает у пользователя числа и математическую операцию,
+     * затем выводит результат
+     *
+     * @param sc объект Scanner для чтения консоли
+     */
     public static void enterCalculator(Scanner sc) {
 
         double num1, num2, res;
@@ -43,6 +49,7 @@ public class Calculator {
             System.out.printf("Результат: %.4f%n", res);
         }
     }
+
     /**
      * Выполняет арифметическую операцию над двумя числами.
      *
@@ -51,7 +58,7 @@ public class Calculator {
      * @param math символ операции: +, -, *, /
      * @return результат вычисления или NaN в случае ошибки
      */
-     static double calculate(double num1, double num2, char math) {
+    static double calculate(double num1, double num2, char math) {
         double res;
         switch (math) {
             case '+':
@@ -77,7 +84,6 @@ public class Calculator {
         }
         return res;
     }
-
 
 
 }
