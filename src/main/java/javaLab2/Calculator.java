@@ -1,4 +1,4 @@
-package calc;
+package javaLab2;
 
 import java.util.Scanner;
 
@@ -13,11 +13,10 @@ import java.util.Scanner;
  */
 
 public class Calculator {
-    public static void main(String[] args) {
+    public static void enterCalculator(Scanner sc) {
 
         double num1, num2, res;
         char math;
-        Scanner sc = new Scanner(System.in);
         try {
 
             System.out.print("Введите первое число: ");
@@ -36,7 +35,6 @@ public class Calculator {
             System.out.println("Ошибка: вводить можно только + - * /");
             return;
         }
-        sc.close();
 
         res = calculate(num1, num2, math);
 
@@ -79,4 +77,7 @@ public class Calculator {
         }
         return res;
     }
+
+
+
 }
